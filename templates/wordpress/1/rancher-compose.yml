@@ -1,0 +1,39 @@
+.catalog:
+  name: "Wordpress"
+  version: "v0.2-ugurozsahin"
+  description: "Blog tool, publishing platform and CMS"
+  uuid: Wordpress-1
+  minimum_rancher_version: v0.51.0
+  questions:    
+    - variable: public_port
+      description: "public port to access the wordpress site"
+      label: "Public Port"
+      required: true
+      default: "80"
+      type: "int"
+    - variable: wordpress_db_name
+      description: "Wordpress Database Name"
+      label: "Database Name"
+      required: true
+      default: "wordpress"
+      type: "string"
+    - variable: wordpress_volume_path
+      description: "Wordpress Data Volume Path"
+      label: "Wordpress Data Volume Path"
+      required: true
+      default: "/my/custom/data"
+      type: "string"
+    - variable: db_root_password
+      description: "MariaDB Root Password"
+      label: "Root Password"
+      required: true
+      default: "example"
+      type: "string"
+    - variable: db_volume_path
+      description: "Database Volume Path"
+      label: "Database Volume Path"
+      required: true
+      default: "/my/custom/db"
+      type: "string"
+
+wordpress:
