@@ -5,10 +5,10 @@ wordpress:
   ports:
     - ${public_port}:80
   environment:
-    - WORDPRESS_DB_HOST: db
-    - WORDPRESS_DB_USER: root
-    - WORDPRESS_DB_PASSWORD: ${db_root_password}
-    - WORDPRESS_DB_NAME: ${wordpress_db_name}
+    WORDPRESS_DB_HOST: db
+    WORDPRESS_DB_USER: root
+    WORDPRESS_DB_PASSWORD: ${db_root_password}
+    WORDPRESS_DB_NAME: ${wordpress_db_name}
   volumes:
     - ${wordpress_volume_path}:/var/www/html
 db:
