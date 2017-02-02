@@ -9,7 +9,7 @@
       description: "public port to access the redis"
       label: "Public Port"
       required: true
-      default: "6397"
+      default: "6379"
       type: "int"
     - variable: redis_volume_path
       description: "Redis Volume Path"
