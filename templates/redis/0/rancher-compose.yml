@@ -1,0 +1,21 @@
+.catalog:
+  name: "Redis"
+  version: "v0.1-redis"
+  description: "Redis is an open source key-value store that functions as a data structure server."
+  uuid: Redis-0
+  minimum_rancher_version: v0.51.0
+  questions:    
+    - variable: public_port
+      description: "public port to access the redis"
+      label: "Public Port"
+      required: true
+      default: "6397"
+      type: "int"
+    - variable: redis_volume_path
+      description: "Redis Volume Path"
+      label: "Redis Volume Path"
+      required: true
+      default: "/my/custom/data"
+      type: "string"
+
+redis:
