@@ -2,6 +2,6 @@ redis:
   restart: always
   image: redis:alpine
   ports:
-    - ${public_port}:6397
+    - ${public_port}:6379
   volumes:
     - ${redis_volume_path}:/data
