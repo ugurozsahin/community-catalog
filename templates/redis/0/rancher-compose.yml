@@ -1,6 +1,6 @@
 .catalog:
   name: "Redis"
-  version: "v0.1-redis"
+  version: "v0.1-ugurozsahin"
   description: "Redis is an open source key-value store that functions as a data structure server."
   uuid: Redis-0
   minimum_rancher_version: v0.51.0
