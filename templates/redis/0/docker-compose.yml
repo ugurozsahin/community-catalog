@@ -1,6 +1,6 @@
 redis:
   image: redis:alpine
-    expose:
+    ports:
       - ${public_port}:6397
     volumes:
       - ${redis_volume_path}:/data
