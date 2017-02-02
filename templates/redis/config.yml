@@ -1,0 +1,5 @@
+name: Redis
+description: |
+  Redis is an open source key-value store that functions as a data structure server.
+version: v0.1-ugurozsahin
+category: Databases
