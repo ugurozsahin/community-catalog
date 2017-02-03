@@ -18,4 +18,4 @@
       default: "/my/custom/data"
       type: "string"
 
-redis:
+nginx:
