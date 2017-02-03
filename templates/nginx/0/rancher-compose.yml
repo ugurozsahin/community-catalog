@@ -1,0 +1,21 @@
+.catalog:
+  name: "Nginx"
+  version: "v0.1-ugurozsahin"
+  description: "Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer, HTTP cache, and a web server (origin server)."
+  uuid: nginx-0
+  minimum_rancher_version: v0.51.0
+  questions:    
+    - variable: public_port
+      description: "public port to access the nginx server"
+      label: "Public Port"
+      required: true
+      default: "8080"
+      type: "int"
+    - variable: nginx_volume_path
+      description: "Nginx Volume Path"
+      label: "Nginx Volume Path"
+      required: true
+      default: "/my/custom/data"
+      type: "string"
+
+nginx:
