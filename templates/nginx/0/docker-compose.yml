@@ -1,0 +1,7 @@
+nginx:
+  restart: always
+  image: nginx:alpine
+  ports:
+    - ${public_port}:80
+  volumes:
+    - ${nginx_volume_path}:/etc/nginx
