@@ -1,0 +1,5 @@
+name: Bind Domain Name Server With Webmin
+description: |
+  Bind DNS server and Webmin, compatible with the "DNS Update (RFC2136)"
+version: v1.0.0-rancher1
+category: External DNS

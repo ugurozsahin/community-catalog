@@ -1,0 +1,9 @@
+bind:
+  restart: always
+  image: sameersbn/bind
+  ports: 
+    - ${bind_port}:53/tcp
+    - ${bind_port}:53/udp
+    - ${webmin_port}:10000/tcp
+  volumes:
+    - ${bind_volume_data}:/data
