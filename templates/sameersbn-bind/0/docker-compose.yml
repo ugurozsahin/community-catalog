@@ -6,4 +6,7 @@ bind:
     - ${bind_port}:53/udp
     - ${webmin_port}:10000/tcp
   volumes:
-    - ${bind_volume_data}:/data
+    - ${bind_volume_path}:/data
+  environment:
+    WEBMIN_ENABLED: ${webmin_enabled}
+    ROOT_PASSWORD: ${webmin_root_password}
