@@ -4,31 +4,31 @@
   description: "Domain Name Server powered by Bind & Webmin"
   minimum_rancher_version: v0.44.0 #maximum_rancher_version: v1.2.0-pre3
   questions:
-      - variable: "bind_port"
+    - variable: "bind_port"
       label: "Bind port"
       description: "Bind port to expose on host. Will be used to bind both TCP and UDP"
       type: "string"
       default: 53
       required: true
-      - variable: "bind_volume_path"
+    - variable: "bind_volume_path"
       label: "The volume path for bind service"
       description: "The volume path for bind service"
       type: "string"
       default: "/my/custom/data"
       required: true
-      - variable: "webmin_enabled"
+    - variable: "webmin_enabled"
       label: "Webmin Enabled"
       description: "Enabled Webmin UI"
       type: "string"
       default: "true"
       required: true
-      - variable: "webmin_port"
+    - variable: "webmin_port"
       label: "Webmin port"
       description: "Webmin port to expose on host. Will be used to webmin TCP"
       type: "string"
       default: 10000
       required: true            
-      - variable: "webmin_root_password"
+    - variable: "webmin_root_password"
       label: "Root Password"
       description: "Root password to Webmin UI"
       type: "password"
